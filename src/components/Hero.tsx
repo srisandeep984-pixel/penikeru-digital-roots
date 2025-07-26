@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/school-hero.jpg";
 
@@ -25,12 +26,16 @@ export const Hero = () => {
           through quality education and values.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
-            Explore Programs
-          </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary">
-            Contact Us
-          </Button>
+          <Link to="/programs">
+            <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
+              Explore Programs
+            </Button>
+          </Link>
+          <Link to="/contact">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-white text-white hover:bg-white hover:text-primary">
+              Contact Us
+            </Button>
+          </Link>
         </div>
       </div>
       

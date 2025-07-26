@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import { GraduationCap, Facebook, Instagram, Youtube, Mail } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Academic Programs", href: "#programs" },
-    { name: "Admissions", href: "#contact" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Contact", href: "#contact" }
+    { name: "About Us", href: "/about" },
+    { name: "Academic Programs", href: "/programs" },
+    { name: "Admissions", href: "/contact" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" }
   ];
 
   const importantLinks = [
@@ -60,12 +61,12 @@ export const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a 
-                    href={link.href} 
+                  <Link 
+                    to={link.href} 
                     className="text-primary-foreground/80 hover:text-white transition-colors"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

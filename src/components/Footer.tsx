@@ -7,7 +7,7 @@ export const Footer = () => {
   const quickLinks = [
     { name: "About Us", href: "/about" },
     { name: "Academic Programs", href: "/programs" },
-    { name: "Admissions", href: "/contact" },
+    { name: "Our Faculty", href: "/faculty" },
     { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" }
   ];
